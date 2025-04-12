@@ -1,0 +1,72 @@
+
+body{
+    background-color: antiquewhite;
+    user-select: none;
+}
+
+table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+th, td{
+     background-color: rgb(156, 198, 223);
+    font-weight: 800;
+    border: 2px solid black;
+    width: auto;
+    margin: 20px ;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;}
+
+
+
+    th:hover{
+        color: white;
+        background-color: #399cca;
+        cursor: pointer;
+        transition: ease-in-out 0.3s;
+        transform: scale(1.1);
+        box-shadow: 10px 5px 5px rgb(189, 192, 191);
+        text-decoration: none;
+    }
+
+     td:hover{
+        color: white;
+        background-color: #399cca;
+        cursor: pointer;
+        transition: ease-in-out 0.3s;
+        transform: scale(1.1);
+        box-shadow: 10px 5px 5px rgb(189, 192, 191);
+        text-decoration: none;
+    }
+   
+    /* Estilo para telas menores (largura máxima de 768px) */
+@media (max-width: 768px) {
+    table {
+        flex-direction: column; /* Empilha as linhas da tabela */
+        height: auto; /* Ajusta a altura */
+    }
+
+    th, td {
+        font-size: 16px; /* Reduz o tamanho da fonte */
+        padding: 8px; /* Reduz o espaçamento interno */
+        margin: 10px; /* Reduz o espaçamento externo */
+    }
+}
+
+/* Estilo para telas muito pequenas (largura máxima de 480px) */
+@media (max-width: 480px) {
+    th, td {
+        font-size: 14px; /* Reduz ainda mais o tamanho da fonte */
+        padding: 5px; /* Reduz o espaçamento interno */
+        margin: 5px; /* Reduz o espaçamento externo */
+    }
+}
+
+th {
+    text-align: center; /* Centraliza o título */
+}
